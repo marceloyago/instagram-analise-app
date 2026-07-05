@@ -1,0 +1,16 @@
+name = "instagram-analise-api"
+main = "src/index.ts"
+compatibility_date = "2024-06-01"
+
+[env.local]
+vars = { ENVIRONMENT = "local", INSTAGRAM_PROVIDER = "mock", LLM_PROVIDER = "mock", PAYMENT_PROVIDER = "mock" }
+
+[[d1_databases]]
+binding = "DB"
+database_name = "instagram-analise-db"
+database_id = "local-db-id"
+
+[vars]
+INSTAGRAM_PROVIDER = "mock"
+LLM_PROVIDER = "mock"
+PAYMENT_PROVIDER = "mock"
